@@ -8,7 +8,7 @@
 
 <script type="application/x-javascript" src="rkioskbrowser.js"/>
 
-        <menubar id="main-menubar" hidden="true"  fullscreentoolbar="false" disabled="true">
+        <menubar id="main-menubar" hidden="true"  fullscreentoolbar="true" disabled="true">
               <menuitem id="menu_preferences" disabled="true"/>
         </menubar>
 
@@ -16,7 +16,6 @@
     <command id="cmd_newNavigator" disabled="true"/>
     <command id="cmd_handleBackspace" disabled="true"/>
     <command id="cmd_handleShiftBackspace" disabled="true"/>
-    <command id="cmd_newNavigatorTab" disabled="true"/>
     <command id="Browser:OpenFile" disabled="true"/>
     <command id="Browser:SavePage" disabled="true"/>
     <command id="Browser:SaveFrame" disabled="true"/>
@@ -26,7 +25,6 @@
     <command id="cmd_printPreview" disabled="true"/>
     <command id="cmd_close" disabled="true"/>
     <command id="cmd_closeWindow" disabled="true"/>
-    <command id="cmd_ToggleTabsOnTop" disabled="true"/>
     <command id="cmd_quitApplication" disabled="true"/>
     <command id="cmd_toggleTaskbar" disabled="true"/>
     <command id="cmd_CustomizeToolbars" disabled="true"/>
@@ -38,7 +36,6 @@
     <command id="cmd_findAgain" disabled="true"/>
     <command id="cmd_findPrevious" disabled="true"/>
     <command id="Browser:AddBookmarkAs" disabled="true"/>
-    <command id="Browser:BookmarkAllTabs" disabled="true"/>
     <command id="Browser:Home"    oncommand="BrowserHome();"/>
     <command id="Browser:Back" disabled="true"/>
     <command id="Browser:Forward" disabled="true"/>
@@ -49,10 +46,6 @@
     <command id="Browser:Forward" disabled="true"/>
     <command id="Browser:ForwardOrForwardDuplicate" disabled="true"/>
     <command id="Browser:ReloadOrDuplicate" disabled="true"/>
-    <command id="Browser:NextTab" disabled="true"/>
-    <command id="Browser:PrevTab" disabled="true"/>     
-    <command id="Browser:ShowAllTabs" disabled="true"/>     
-    <command id="Browser:ToggleTabView" disabled="true"/>
     <command id="Browser:ToggleAddonBar" disabled="true"/>
     <command id="cmd_fullZoomReduce" disabled="true"/>
     <command id="cmd_fullZoomEnlarge" disabled="true"/>
@@ -65,11 +58,9 @@
     <command id="Tools:Sanitize" disabled="true"/>
     <command id="Tools:Inspect" disabled="true"/>
     <command id="Tools:PrivateBrowsing" disabled="true"/>
-    <command id="History:UndoCloseTab" disabled="true"/>
     <command id="History:UndoCloseWindow" disabled="true"/>
     <command id="cmd_bm_open" disabled="true"/>
     <command id="cmd_bm_openinnewwindow" disabled="true"/>
-    <command id="cmd_bm_openinnewtab" disabled="true"/>
     <command id="cmd_bm_openfolder" disabled="true"/>
     <command id="cmd_bm_managefolder" disabled="true"/>
     <command id="cmd_bm_newfolder" disabled="true"/>
@@ -95,6 +86,16 @@
     <command id="cmd_textZoomReduce" disabled="true"/>
     <command id="cmd_textZoomEnlarge" disabled="true"/>
     <command id="cmd_textZoomReset" disabled="true"/>
+    <!-- Modificaciones TPV -->
+    <command id="cmd_newNavigatorTab" disabled="true"/>
+    <command id="cmd_ToggleTabsOnTop" disabled="true"/>
+    <command id="Browser:BookmarkAllTabs" disabled="true"/>
+    <command id="History:UndoCloseTab" disabled="true"/>
+    <command id="cmd_bm_openinnewtab" disabled="true"/>
+    <command id="Browser:NextTab" disabled="true"/>
+    <command id="Browser:PrevTab" disabled="true"/>     
+    <command id="Browser:ShowAllTabs" disabled="true"/>     
+    <command id="Browser:ToggleTabView" disabled="true"/>
  </commandset>
    <commandset id="placesCommands">
     <command id="Browser:ShowAllBookmarks" disabled="true"/>
@@ -104,7 +105,6 @@
   <keyset id="mainKeyset">
     <key id="rkiosk_f1" keycode="VK_F1" oncommand="Rkiosk_donothing();"/>
     <key id="key_newNavigator" disabled="true"/>
-    <key id="key_newNavigatorTab" disabled="true"/>
     <key id="focusURLBar" disabled="true"/>
     <key id="focusURLBar2" disabled="true"/>
     <key id="key_search" disabled="true"/>
@@ -130,12 +130,10 @@
     <key id="key_findAgain" disabled="true"/>
     <key id="key_findPrevious" disabled="true"/>
     <key id="addBookmarkAsKb" disabled="true"/>
-    <key id="bookmarkAllTabsKb" disabled="true"/>
     <key id="key_stop" disabled="true"/>
     <key id="key_gotoHistory" command="Rkiosk_donothing();"/>
     <key id="key_switchTextDirection" disabled="true"/>
     <key id="key_sanitize" disabled="true"/>
-    <key id="key_undoCloseTab" disabled="true"/>
     <key id="viewBookmarksSidebarKb" command="Rkiosk_donothing();"/>
     <key id="viewBookmarksSidebarWinKb" command="Rkiosk_donothing();"/>
     <key id="key_fullScreen" disabled="true"/>
@@ -152,10 +150,12 @@
     <key id="key_webConsole" disabled="true"/>
     <key id="key_inspect" disabled="true"/>
     <key id="key_scratchpad" disabled="true"/>
-    <key id="key_showAllTabs" disabled="true"/>
-    <key id="key_tabview" disabled="true"/>
     <key id="key_privatebrowsing" disabled="true"/>
     <key id="key_undoCloseWindow" disabled="true"/>
+    <key id="key_toggleAddonBar" disabled="true"/>
+    <!-- Modificaciones TPV -->
+    <key id="key_reload" disabled="true"/>
+    <key id="key_newNavigatorTab" disabled="true"/>
     <key id="key_selectTab1" disabled="true"/>
     <key id="key_selectTab2" disabled="true"/>
     <key id="key_selectTab3" disabled="true"/>
@@ -165,6 +165,9 @@
     <key id="key_selectTab7" disabled="true"/>
     <key id="key_selectTab8" disabled="true"/>
     <key id="key_selectLastTab" disabled="true"/>
-    <key id="key_toggleAddonBar" disabled="true"/>
+    <key id="key_showAllTabs" disabled="true"/>
+    <key id="key_tabview" disabled="true"/>
+    <key id="key_undoCloseTab" disabled="true"/>
+    <key id="bookmarkAllTabsKb" disabled="true"/>
   </keyset>
 </overlay>

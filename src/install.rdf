@@ -6,10 +6,10 @@ xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 	<Description about="urn:mozilla:install-manifest">
 
 		<em:id>{4D498D0A-05AD-4fdb-97B5-8A0AABC1FC5B}</em:id>
-		<em:name>R-kiosk</em:name>
+		<em:name>TPV</em:name>
 		<em:version>0.9.1</em:version>
-		<em:description>RKiosk (Real Kiosk), fullscreen kiosk mode: all menus, keys etc. disabled</em:description>
-		<em:creator>Kimmo Heinaaro</em:creator>
+		<em:description>Personal TPV</em:description>
+		<em:creator>Creator: Kimmo Heinaaro | Modify: Juan Manuel Torres</em:creator>
 		<em:targetApplication>
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
